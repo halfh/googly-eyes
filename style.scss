@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+card {
+  display: flex;
+  width: 20vw;
+  height: 20vh;
+  //   background-color: rgb(33, 33, 33);
+  //   border: 1rem solid rgb(33, 33, 33);
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: auto;
+
+  eye {
+    border: 0.2rem solid rgb(33, 33, 33);
+    background-color: #fff;
+    width: 7.5vw;
+    height: 10vh;
+    display: inline-flex;
+    align-items: center;
+    margin: auto auto;
+    border-radius: 50%;
+    overflow: hidden;
+    pupil {
+      margin-top: -70%;
+      margin-left: -20%;
+      position: relative;
+      display: inline-block;
+      background-color: lightseagreen;
+      border-radius: 50%;
+      width: 3vw;
+      height: 3vw;
+      top: 0;
+      left: 0;
+
+      animation: colorChange 3s ease-in-out infinite;
+      @keyframes colorChange {
+        0% {
+          background-color: rgb(41, 143, 138);
+        }
+        50% {
+          background-color: rgb(13, 63, 60);
+        }
+        100% {
+          background-color: rgb(41, 143, 138);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+card {
+  display: flex;
+  width: 20vw;
+  height: 20vh;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: auto;
+}
+card eye {
+  border: 0.2rem solid #212121;
+  background-color: #fff;
+  width: 7.5vw;
+  height: 10vh;
+  display: inline-flex;
+  align-items: center;
+  margin: auto auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+card eye pupil {
+  margin-top: -70%;
+  margin-left: -20%;
+  position: relative;
+  display: inline-block;
+  background-color: lightseagreen;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  top: 0;
+  left: 0;
+  -webkit-animation: colorChange 3s ease-in-out infinite;
+          animation: colorChange 3s ease-in-out infinite;
+}
+@-webkit-keyframes colorChange {
+  0% {
+    background-color: #298f8a;
+  }
+  50% {
+    background-color: #0d3f3c;
+  }
+  100% {
+    background-color: #298f8a;
+  }
+}
+@keyframes colorChange {
+  0% {
+    background-color: #298f8a;
+  }
+  50% {
+    background-color: #0d3f3c;
+  }
+  100% {
+    background-color: #298f8a;
+  }
+}/*# sourceMappingURL=style.css.map */
